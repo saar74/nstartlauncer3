@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtDate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    tools:context="com.poc.nstartlauncher.MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="508dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="5dip" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtSearch"
+        android:layout_alignBottom="@+id/txtSearch"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/roundedbutton"
+        android:minHeight="48dp"
+        android:onClick="onSearchlick"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnDailer"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="70dp"
+        android:layout_toEndOf="@+id/btnShowApps"
+        android:background="@drawable/dialerbotton"
+        android:onClick="onDailerClick"
+        app:icon="@android:drawable/sym_action_call" />
+
+    <ImageButton
+        android:id="@+id/btnCamera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="70dp"
+        android:layout_toStartOf="@+id/btnFlashlight"
+        android:background="@drawable/camerabotton"
+        android:onClick="onCameraClick" />
+
+    <ImageButton
+        android:id="@+id/btnFlashlight"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/torchbotton"
+        android:onClick="onFlashlightClick" />
+
+    <ImageButton
+        android:id="@+id/btnShowApps"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/menubotton"
+        android:onClick="onShowAppsClick" />
+
+    <android.widget.TextClock
+        android:id="@+id/datumprikaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSearch"
+        android:layout_alignStart="@+id/txtSearch"
+        android:layout_alignEnd="@+id/txtSearch"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="50dp"
+        android:format12Hour="MMM dd, yyyy\nhh:mm"
+        android:format24Hour="MMM dd, yyyy\n hh:mm"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/settings"
+        android:layout_marginStart="30dp"
+        android:onClick="onSettingClick"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/btnWhatsapp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="170dp"
+        android:layout_toEndOf="@+id/btnShowApps"
+        android:background="@drawable/whatsapp"
+        android:onClick="onWhatsappClick"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/btnChrome"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="170dp"
+        android:layout_toStartOf="@+id/btnFlashlight"
+        android:background="@drawable/chrome"
+        android:onClick="onChromeClick" />
+
+    <ImageButton
+        android:id="@+id/btnWaze"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@+id/btnFlashlight"
+        android:background="@drawable/waze"
+        android:onClick="onWazeClick" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/gmail"
+        android:layout_marginStart="30dp"
+        android:onClick="onGmailClick"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/btnCalendar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="260dp"
+        android:layout_toEndOf="@+id/btnShowApps"
+        android:background="@drawable/calendar"
+        android:onClick="onCalendarClick"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/btnYoutube"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="260dp"
+        android:layout_toStartOf="@+id/btnFlashlight"
+        android:background="@drawable/youtube"
+        android:onClick="onYoutubeClick" />
+
+    <ImageButton
+        android:id="@+id/btnCalculator"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="260dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@+id/btnFlashlight"
+        android:background="@drawable/calculator"
+        android:onClick="onCalculatorClick" />
+
+</RelativeLayout>
