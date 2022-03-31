@@ -16,14 +16,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="508dp"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:padding="5dip" />
+        android:padding="5dip"
+        android:text="Search"
+        />
 
     <ImageButton
         android:id="@+id/imageButton2"

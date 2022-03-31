@@ -1,12 +1,18 @@
 package com.poc.nstartlauncher;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +30,7 @@ public class HomeScreenFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private boolean mbVisible;
+    private boolean mbFirstFocus;
 
     public HomeScreenFragment() {
         // Required empty public constructor
@@ -50,11 +57,46 @@ public class HomeScreenFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         mbVisible = false;
+        mbFirstFocus = true;
+
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        EditText txtSearch =(EditText) getView().findViewById(R.id.txtSearch);
+        txtSearch.setTextColor(ContextCompat.getColor(getContext(), R.color.black));
+
+        txtSearch.setOnKeyListener(new EditText.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode==66) {
+                    MainActivity main = (MainActivity) getActivity();
+                    main.onSearchlick(getView());
+                }
+                return false;
+            }
+        });
+
+        txtSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus)
+                {
+                   if (mbFirstFocus) {
+                       txtSearch.setText("");
+                       mbFirstFocus = false;
+                   }
+                }
+                else{
+
+                }
+            }
+        });
     }
 
     @Override
@@ -73,6 +115,7 @@ public class HomeScreenFragment extends Fragment {
     public void onResume() {
         mbVisible = true;
         super.onResume();
+        mbFirstFocus = true;
     }
 
     @Override

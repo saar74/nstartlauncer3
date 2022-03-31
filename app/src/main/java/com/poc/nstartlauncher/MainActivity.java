@@ -16,12 +16,15 @@ import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import able.endpoint.android.AbleSDK;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,9 +44,15 @@ public class MainActivity extends AppCompatActivity {
         loadFragment(mHomeFragment);
         bShowHomeScreen = true;
         mbFlashlightOn = false;
+        try {
+            AbleSDK.init(getApplicationContext(), "nstartlauncher", true);
+        }
+        catch (Exception x) {}
+
     }
 
-    private boolean loadFragment(Fragment fragment) {
+
+        private boolean loadFragment(Fragment fragment) {
 
         if (fragment != null) {
 

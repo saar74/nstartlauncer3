@@ -10,6 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url '/Users/discoman/Documents/launchers/nstartlauncher/repo' }
+
     }
 }
 rootProject.name = "nstartlauncher"
