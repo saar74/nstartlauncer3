@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "903444271336",
+    "project_id": "nstartlauncher",
+    "storage_bucket": "nstartlauncher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903444271336:android:b3422e11a2ebb8045cf95d",
+        "android_client_info": {
+          "package_name": "com.poc.nstartlauncher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903444271336-p1fsgmi7ajem51q5sffp4vaj84o5c0lg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poc.nstartlauncher",
+            "certificate_hash": "8e53fce93c547a206d96b07dfbc97834a45d43ee"
+          }
+        },
+        {
+          "client_id": "903444271336-6etkpjv8d85ktc87e9esh2vbv33b0av0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgVeU0siNzPysjGMHxA24oFcRcNiHS1dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903444271336-6etkpjv8d85ktc87e9esh2vbv33b0av0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
