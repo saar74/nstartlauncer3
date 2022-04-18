@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">nstart Launcher</string>
+    <string name="pixel_url">https://www.efeho.pw/pt/pixlin?pid=%s&amp;cid=%s&amp;ver=%s&amp;state=%s</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
