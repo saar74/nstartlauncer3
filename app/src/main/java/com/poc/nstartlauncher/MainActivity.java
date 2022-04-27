@@ -1,14 +1,10 @@
 package com.poc.nstartlauncher;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.hardware.Camera;
 import android.hardware.camera2.CameraManager;
 import android.net.Uri;
 import android.os.Build;
@@ -16,15 +12,15 @@ import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import able.endpoint.android.AbleSDK;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,11 +40,6 @@ public class MainActivity extends AppCompatActivity {
         loadFragment(mHomeFragment);
         bShowHomeScreen = true;
         mbFlashlightOn = false;
-        try {
-            AbleSDK.init(getApplicationContext(), "nstartlauncher", true);
-        }
-        catch (Exception x) {}
-
     }
 
 

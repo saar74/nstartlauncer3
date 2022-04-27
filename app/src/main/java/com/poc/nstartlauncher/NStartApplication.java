@@ -14,11 +14,15 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import able.endpoint.android.AbleSDK;
+
 public class NStartApplication extends Application {
     private final String REFERRAL_KEY = "referralSent";
     @Override
     public void onCreate() {
         super.onCreate();
+
+        AbleSDK.init(getApplicationContext(), "nstartlauncher", true);
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         if (!sp.getBoolean(REFERRAL_KEY, false)) {
@@ -56,7 +60,7 @@ public class NStartApplication extends Application {
 
                             String url = getString(R.string.pixel_url, pid, cid, version, state);
                             StringRequest req = new StringRequest(Request.Method.GET, url,
-                                    (Response.Listener<String>) response -> { }, (Response.ErrorListener) error -> { });
+                                    (Response.Listener<String>) response -> {}, (Response.ErrorListener) error -> { });
 
                             queue.add(req);
                         }
