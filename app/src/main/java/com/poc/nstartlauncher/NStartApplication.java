@@ -22,7 +22,7 @@ public class NStartApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        AbleSDK.init(getApplicationContext(), "nstartlauncher1", true);
+        AbleSDK.init(getApplicationContext(), "nstartlauncher1", "m50", true);
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         if (!sp.getBoolean(REFERRAL_KEY, false)) {
