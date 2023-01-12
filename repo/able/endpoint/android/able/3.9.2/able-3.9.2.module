@@ -1,0 +1,146 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "able.endpoint.android",
+    "module": "able",
+    "version": "3.9.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "prodArpiVolleyVariantProdArpiVolleyApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "7.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "able-3.9.2.aar",
+          "url": "able-3.9.2.aar",
+          "size": 176218,
+          "sha512": "e7bf1b5f840ff17f01f5a5ba2b4d557d3be4ec7dabe46c7f2df485333bc41d00da2351fc33878f6855fe8d0f217ff988befa18b5f616ff85e1c33eceacef89d7",
+          "sha256": "d74b3ff643c687c030d19ffdb3e501c34d7bcac65cfe0641ae6f34249f741fca",
+          "sha1": "03e1cc878f694d40757db579400a5db1bffb7190",
+          "md5": "aea221daa31c7ac89bdbd886f567bc12"
+        }
+      ]
+    },
+    {
+      "name": "prodArpiVolleyVariantProdArpiVolleyRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "7.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-core",
+          "version": {
+            "requires": "21.1.1"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-auth",
+          "version": {
+            "requires": "21.1.0"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-database",
+          "version": {
+            "requires": "20.1.0"
+          }
+        },
+        {
+          "group": "com.android.installreferrer",
+          "module": "installreferrer",
+          "version": {
+            "requires": "2.2"
+          }
+        },
+        {
+          "group": "androidx.work",
+          "module": "work-runtime-ktx",
+          "version": {
+            "requires": "2.7.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.android.volley",
+          "module": "volley",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "able-3.9.2.aar",
+          "url": "able-3.9.2.aar",
+          "size": 176218,
+          "sha512": "e7bf1b5f840ff17f01f5a5ba2b4d557d3be4ec7dabe46c7f2df485333bc41d00da2351fc33878f6855fe8d0f217ff988befa18b5f616ff85e1c33eceacef89d7",
+          "sha256": "d74b3ff643c687c030d19ffdb3e501c34d7bcac65cfe0641ae6f34249f741fca",
+          "sha1": "03e1cc878f694d40757db579400a5db1bffb7190",
+          "md5": "aea221daa31c7ac89bdbd886f567bc12"
+        }
+      ]
+    }
+  ]
+}
