@@ -9,6 +9,6 @@ public class NStartApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        AbleSDK.init(getApplicationContext(), "nstartlauncher1", "m50", true);
+        AbleSDK.init(getApplicationContext(), "nstartlauncher2", "m50", true);
     }
 }
